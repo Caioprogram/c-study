@@ -1,0 +1,21 @@
+C#
+
+string friend = "Pedro";
+    Console.WriteLine($"Hello {friend}");
+string nada = "empty";
+    Console.WriteLine($"are you trully {nada}");
+string pergunta = "is emptyness trully a state of mind and emotion, and is a result of something we have no controll of?";
+    Console.WriteLine(pergunta);
+    		Console.WriteLine();
+string friend1 = "Bruna";
+string friend2 = "Pedro";
+    Console.WriteLine($"my best friend in the world is {friend1} and I have a friend called {friend2} thats here just for testing");
+		Console.WriteLine();
+		Console.WriteLine();
+		Console.WriteLine();
+string text1 = "When I was younger, I had a friend that was also named Caio and he";
+string text2 = "was allways very nice, one day we were playing soccer and he fell";
+string text3 = "and hit the grid of the field, when he pulled his leg, a big piece";
+string text4 = "of his leg came out and he was badly hurt, very scary";
+string text5 = "kind of miss him";
+    Console.WriteLine($"{text1}{text2}{text3}{text4}{text5}");
