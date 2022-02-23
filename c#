@@ -53,14 +53,14 @@ double d = ((a + b*c +6*a/12) / c)/a;
 		
 decimal min = decimal.MinValue;
 decimal max = decimal.MaxValue;
-Console.WriteLine($"The range of the decimal type is {min} to {max}");
+		Console.WriteLine($"The range of the decimal type is {min} to {max}");
 double a = 1.0;
 double b = 3.0;
-Console.WriteLine(a / b);
+		Console.WriteLine(a / b);
 
 decimal c = 1.0M;
 decimal d = 3.0M;
-Console.WriteLine(c / d);
+		Console.WriteLine(c / d);
 
 		-- Exercicio --
 Escreva um código que calcula a área de um círculo cujo raio é de 2,50 centímetros. Lembre-se de que a área de um círculo é o quadrado do raio multiplicado por PI.
@@ -68,7 +68,7 @@ Escreva um código que calcula a área de um círculo cujo raio é de 2,50 cent�
 
 double r = 2.50;
 double a = (r * r) * Math.PI;
-Console.WriteLine(a);
+		Console.WriteLine(a);
 
 		-- Loops, if/else --
 int a = 5;
@@ -76,13 +76,13 @@ int b = 3;
 int c = 4;
 if ((a + b + c > 10) && (a == b))
 {
-    Console.WriteLine("The answer is greater than 10");
-    Console.WriteLine("And the first number is equal to the second");
+    		Console.WriteLine("The answer is greater than 10");
+    		Console.WriteLine("And the first number is equal to the second");
 }
 else
 {
-    Console.WriteLine("The answer is not greater than 10");
-    Console.WriteLine("Or the first number is not equal to the second");
+    		Console.WriteLine("The answer is not greater than 10");
+    		Console.WriteLine("Or the first number is not equal to the second");
 }
 
 ------O símbolo == testa a igualdade. Usar == distingue o teste de igualdade de atribuição, que você viu em a = 5.--------
