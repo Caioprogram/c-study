@@ -1,100 +1,32 @@
-C#
+		-------Jogo de dados------
 
-string friend = "Pedro";
-    Console.WriteLine($"Hello {friend}");
-string nada = "empty";
-    Console.WriteLine($"are you trully {nada}");
-string pergunta = "is emptyness trully a state of mind and emotion, and is a result of something we have no controll of?";
-    Console.WriteLine(pergunta);
-    		Console.WriteLine();
-string friend1 = "Bruna";
-string friend2 = "Pedro";
-    Console.WriteLine($"my best friend in the world is {friend1} and I have a friend called {friend2} thats here just for testing");
-		Console.WriteLine();
-		Console.WriteLine();
-		Console.WriteLine();
-string text1 = "When I was younger, I had a friend that was also named Caio and he";
-string text2 = "was allways very nice, one day we were playing soccer and he fell";
-string text3 = "and hit the grid of the field, when he pulled his leg, a big piece";
-string text4 = "of his leg came out and he was badly hurt, very scary";
-string text5 = "kind of miss him";
-    Console.WriteLine($"{text1}{text2}{text3}{text4}{text5}");
+Random dice = new Random();
 
+int roll1 = dice.Next(1, 7);
+int roll2 = dice.Next(1, 7);
+int roll3 = dice.Next(1, 7);
 
-	-- Números --
+int total = roll1 + roll2 + roll3;
 
-		-- Integers --
-int a = 7;
-int b = 4;
-int c = 3;
-int d = (a + b) / c;
-int e = (a + b) % c;
-	Console.WriteLine($"quotient: {d}");
-	Console.WriteLine($"remainder: {e}");
-		int max = int.MaxValue;
-		int min = int.MinValue;
-	Console.WriteLine($"The range of integers is {min} to {max}");
-		int what = max + 3;
-	Console.WriteLine($"An example of overflow: {what}");
-		
-		-- Doubles --		
-double a = 19;
-double b = 23;
-double c = 8;
-double d = ((a + b*c +6*a/12) / c)/a;
-	Console.WriteLine(d);
-		double max = double.MaxValue;
-		double min = double.MinValue;
-	Console.WriteLine($"The range of double is {min} to {max}");
-		double third = 1.0 / 3.0;
-	Console.WriteLine($"third = {third}");
+Console.WriteLine($"Dice roll: {roll1} + {roll2} + {roll3} = {total}");
 
-		-- Decimais --
-		
-decimal min = decimal.MinValue;
-decimal max = decimal.MaxValue;
-		Console.WriteLine($"The range of the decimal type is {min} to {max}");
-double a = 1.0;
-double b = 3.0;
-		Console.WriteLine(a / b);
-
-decimal c = 1.0M;
-decimal d = 3.0M;
-		Console.WriteLine(c / d);
-
-		-- Exercicio --
-Escreva um código que calcula a área de um círculo cujo raio é de 2,50 centímetros. Lembre-se de que a área de um círculo é o quadrado do raio multiplicado por PI.
---Math.PI = pi--
-
-double r = 2.50;
-double a = (r * r) * Math.PI;
-		Console.WriteLine(a);
-
-		-- Loops, if/else --
-int a = 5;
-int b = 3;
-int c = 4;
-if ((a + b + c > 10) && (a == b))
+if ((roll1 == roll2) || (roll2 == roll3) || (roll1 == roll3))
 {
-    		Console.WriteLine("The answer is greater than 10");
-    		Console.WriteLine("And the first number is equal to the second");
+    Console.WriteLine("You rolled doubles!! \n +2 bonus to total!");
+    total+= 2;
+}  
+
+if((roll1  == roll2) && (roll2 == roll3))
+{
+    Console.WriteLine("WOW YOU ROLLED TRIPLES! \n +6 bonus to total!");
+    total += 6;
 }
+if (total > 14)
+{
+    Console.WriteLine("You Win!!!");
+}
+
 else
 {
-    		Console.WriteLine("The answer is not greater than 10");
-    		Console.WriteLine("Or the first number is not equal to the second");
+    Console.WriteLine("Sorry, you lost :( ");
 }
-
-------O símbolo == testa a igualdade. Usar == distingue o teste de igualdade de atribuição, que você viu em a = 5.--------
-
-//O && representa "e". Isso significa que as duas condições devem ser verdadeiras para executar a instrução no branch verdadeiro. Estes exemplos também mostram 
-que você pode ter várias instruções em cada branch condicional, desde que você coloque-as entre { e }.//
-
-//Você também pode usar || representar.//
-
-
-
-
-
-
-
