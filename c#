@@ -1,1 +1,28 @@
-test
+
+//etapa 1 - adicione valores numericos
+
+int firstNumber = 12;
+int secondNumber = 7;
+
+Console.WriteLine(firstNumber + secondNumber);
+  
+    /* vai realizar a soma dos números apresentados, essa equação pode mudar dependendo da equação pedida podendo ser:
+  multiplicação (*), Divisão (/), soma (+), subtração (-).*/
+ 
+string nome = "Bob";
+int firstNumber = 7;
+
+Console.WriteLine( nome + " vendeu " + firstNumber + " produtos.");
+  
+    /* Pode ser feito de maneira mais completa, adicionando uma soma, diretamente dentro do parenteses */
+  
+Random dice = new Random (); 
+string nome = "Bob";
+int firstNumber = dice.Next(1, 8);
+
+Console.WriteLine(nome + " vendeu " + (firstNumber + 7) + " produtos.");
+
+    /* para escrita de codigos em decimais, foi definido que a letra "M" seria o diferenciador para números decimais*/
+
+decimal decimalQuotient = 7m/5;
+Console.WriteLine($"Decimal cotient of the equasion is: {decimalQuotient}");
